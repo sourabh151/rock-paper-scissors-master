@@ -1,0 +1,458 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+    /*   border: 1px solid white; */
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    position: relative;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.header {
+    width: 90%;
+    height: 10%;
+    flex: 1;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 0.5rem;
+    padding: 1.5%;
+}
+
+.logo {
+    width: 25%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.banner-title {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: hsl(229, 64%, 46%);
+}
+
+.score {
+    font-size: 3rem;
+    color: hsl(229, 25%, 31%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.win {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    display: none;
+}
+
+.win h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.lose {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    display: none;
+
+}
+
+.lose h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.draw {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    display: none;
+}
+
+.draw h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.play-again {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border-style: none;
+    background-color: white;
+    color: hsl(214, 47%, 23%);
+    font-weight: 600;
+    margin-top: 4%;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.game {
+    width: 16rem;
+    height: 16rem;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gameBG {
+    background: url("images/bg-triangle.svg") no-repeat center;
+    background-size: 16rem 16rem;
+}
+
+.row1 {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.row2 {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.button-containers {
+    border-radius: 100%;
+}
+
+.button1-container {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    left: -25%;
+    top: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2-container {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    right: -25%;
+    top: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button3-container {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    bottom: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-circle {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: hsl(229, 25%, 31%);
+    border-radius: 100%;
+    display: none;
+    z-index: 10;
+}
+
+.buttons {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.row1 .buttons h2 {
+    position: absolute;
+    bottom: -50%;
+    color: white;
+    text-align: center;
+    width: 200%;
+    display: none;
+}
+
+.button1-container:active #b1,
+.button2-container:active #b2,
+.button3-container:active #b3 {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.logo {
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+}
+
+.button1 {
+    background: linear-gradient(to bottom,
+        hsl(230, 89%, 65%),
+        50%,
+        hsl(230, 89%, 62%));
+    box-shadow: 0 3px hsl(230, 89%, 62%, 0.5);
+}
+
+/* hsla(214, 47%, 23%,0.3) */
+.shadows {
+    box-shadow: 0px 0px 0px 2rem rgba(255, 255, 255, 0.05),
+        0px 0px 0px 4rem rgba(255, 255, 255, 0.025),
+        0px 0px 0px 6rem rgba(255, 255, 255, 0.0125);
+}
+
+.paper {
+    background: url("images/icon-paper.svg") center no-repeat,
+        linear-gradient(to top, white, 95%, rgba(255, 255, 255, 0.5));
+    background-size: 50%;
+}
+
+.button2 {
+    background: linear-gradient(to bottom, hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+    box-shadow: 0 3px hsl(39, 89%, 49%, 0.5);
+}
+
+.scissor {
+    background: url("images/icon-scissors.svg") center no-repeat,
+        linear-gradient(to top, white, 95%, rgba(255, 255, 255, 0.5));
+    background-size: 50%;
+}
+
+.button3 {
+    background: linear-gradient(to bottom,
+        hsl(349, 70%, 56%),
+        hsl(349, 71%, 52%));
+    box-shadow: 0 3px hsl(349, 71%, 52%, 0.5);
+}
+
+.rock {
+    background: url("images/icon-rock.svg") center no-repeat,
+        linear-gradient(to top, white, 95%, rgba(255, 255, 255, 0.5));
+    background-size: 50%;
+}
+
+.footer {
+    flex: 1;
+}
+
+.rules {
+    width: 10rem;
+    height: 3rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.rules:hover {
+    color: hsl(214, 47%, 23%);
+    background-color: white;
+}
+
+/* RULE PANEL */
+
+.rule-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.rule-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.view {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.rule-panel h2 {
+    font-size: 2.8rem;
+}
+
+.cancel {
+    background: url("images/icon-close.svg") no-repeat center;
+    width: 5rem;
+    height: 5rem;
+    border-style: none;
+    border-radius: 100%;
+}
+
+.cancel:hover {
+    color: white;
+    background-color: hsla(349, 70%, 56%, 0.4);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-height:400px) {
+    
+
+    .game {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .gameBG {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .button-containers {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .main {
+        width: 60%;
+    }
+
+    .container {
+        flex: 6;
+    }
+
+    .game {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .gameBG {
+        width: 22rem;
+        height: 22rem;
+        background-size: 22rem 22rem;
+    }
+
+    .button-containers {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .footer {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .rule-container {
+        width: 30rem;
+        height: 30rem;
+        display: grid;
+        background-color: white;
+        place-items: center;
+        border-radius: 0.5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .rule-container h2 {
+        grid-column: 1/3;
+    }
+
+    .rule-container button {
+        grid-column: 4/5;
+    }
+
+    .rule-container img {
+        grid-row: 2;
+        grid-column: 1/5;
+        width: 70%;
+        height: 100%;
+    }
+    .win{
+      font-ize: 6rem;
+      bottom: 30%;
+    }
+    .lose{
+      font-ize: 6rem;
+      bottom: 30%;
+    }
+    .draw{
+      font-ize: 6rem;
+      bottom: 30%;
+    }
+
+@media screen and (min-width:1024px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1366px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/*background:url("images/icon-paper.svg") center no-repeat*/

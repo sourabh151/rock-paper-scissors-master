@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <!--
+            Feel free to remove these styles or customise in your own stylesheet 👍
+      chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/rps
+    -->
+    <style>
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="logo-header" />
+            <div class="banner">
+                <p class="banner-title">SCORE</p>
+                <h2 class="score">00</h2>
+            </div>
+        </header>
+        <section class="container gameBG">
+            <div class="game">
+                <div class="row1">
+                    <div class="button1-container button-containers">
+                        <div id="b1" class="button1 buttons">
+                            <div class="logo paper"></div>
+                            <h2>YOU PICKED</h2>
+                        </div>
+                        <div class="bg-circle"></div>
+                    </div>
+                    <div class="button2-container button-containers">
+                        <div id="b2" class="button2 buttons">
+                            <div class="logo scissor"></div>
+                            <h2>THE HOUSE PICKED</h2>
+                        </div>
+                        <div class="bg-circle"></div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="button3-container  button-containers">
+                        <div id="b3" class="button3 buttons">
+                            <div class="logo rock"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="win">
+                <h2>YOU WIN</h2>
+                <button class="play-again">PLAY AGAIN</button>
+            </div>
+            <div class="lose">
+                <h2>YOU LOSE</h2>
+                <button class="play-again">PLAY AGAIN</button>
+            </div>
+            <div class="draw">
+                <h2>DRAW</h2>
+                <button class="play-again">PLAY AGAIN</button>
+            </div>
+        </section>
+        <footer class="footer"><button class="rules">RULES</button></footer>
+    </main>
+    <!-- RULE PANEL -->
+    <section class="rule-panel">
+        <div class="rule-container">
+            <h2>RULES</h2>
+            <img src="images/image-rules.svg" alt="" />
+            <button class="cancel"></button>
+        </div>
+    </section>
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/sourabh151">Sourabh Jhamnani</a>.
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
